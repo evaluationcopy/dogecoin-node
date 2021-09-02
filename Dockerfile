@@ -9,3 +9,4 @@ RUN mkdir ~/.dogecoin && echo rpcuser=dogecoinrpc > ~/.dogecoin/dogecoin.conf &&
 EXPOSE 22556
 CMD ["dogecoind", "-printtoconsole"]
 LABEL name="dogecoin-node" version="${version}" description="Dogecoin fullnode container based off Debian"
+LABEL maintainer="Dave Sharone <radardave1@gmai.....>"
