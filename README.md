@@ -60,3 +60,5 @@ Copy the bootstrap.dat file to the mapped volume directory as shown above, /loca
 Once the node has imported the bootstrap.dat file, it'll be renamed to bootstrap.dat.old.
 
 **TO THE MOON!!!**
+
+Much Receive: D6fhh4nDsYfyBjLFb1CaVZCq4xr7JPXsjQ
