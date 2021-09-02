@@ -14,7 +14,7 @@ Run a Dogecoin fullnode in a Docker container
 
 It's not that hard, actually. There are two ways to get it up and running:
 
-### A. Pull and run the image from the [Docker Store](https://hub.docker.com/r/evaluationcopy/dogecoin-node)
+### Pull and run the image from the [Docker Store](https://hub.docker.com/r/evaluationcopy/dogecoin-node)
 
 You only need to run one command to get it up and running:
 
@@ -30,6 +30,17 @@ It is possible to run without a volume, however the blockchain data will be dele
 it can take days to download the full blockchain.
 
 Boom, your Dogecoin node is up and running!
+
+### Custom command line arguments
+
+By default, the image runs ```dogecoind -printtoconsole``` as the command.  You can customize the command arguments if desired.  
+Here's an example of a customized command argument for -maxuploadtarget=20000.
+
+```bash
+
+docker run -p 22556:22556 -v /localfolder/dogevolume:/root/.dogecoin evaluationcopy/dogecoin-node:latest dogecoind -printtoconsole -maxuploadtarget=20000
+
+```
 
 ## How to build
 
