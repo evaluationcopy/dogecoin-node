@@ -53,8 +53,6 @@ You can get the bootstrap.dat file from:
 
 Sit back and relax while it's downloading. It's a large file, so it may take some time.
 
-Before copying the bootstrap file to the Docker container, **make sure you've run the container at least once**. Then, cop
-
 Copy the bootstrap.dat file to the mapped volume directory as shown above, /localfolder/dogevolume is our example.
 
 Once the node has imported the bootstrap.dat file, it'll be renamed to bootstrap.dat.old.
